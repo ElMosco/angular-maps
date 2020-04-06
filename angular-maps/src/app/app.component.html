@@ -1,0 +1,41 @@
+{{title}}
+<agm-map [latitude] = "lat" [longitude] = "lng">
+
+  <agm-marker [latitude] = "lat" [longitude] = "lng" [iconUrl]="icon">
+  </agm-marker>
+
+  <agm-marker [latitude] = "latCas" [longitude] = "lngCas" [iconUrl]= "icon1">
+  </agm-marker>
+
+  <agm-marker [latitude] = "latFrd" [longitude] = "lngFrd" [iconUrl]="icon2">
+  </agm-marker>
+
+  <agm-marker [latitude] = "latCarr" [longitude] = "lngCarr" [iconUrl]="icon3">
+  </agm-marker>
+
+  <agm-circle [latitude]="lat" [longitude]="lng" [radius]="50" [fillColor]="color">
+  </agm-circle>
+
+  <agm-circle [latitude]="latCas" [longitude] = "lngCas" [radius] = "50" [fillColor] = "color">
+  </agm-circle>
+
+  <agm-polygon [paths] = "triangle" [fillColor]="colorRett">
+  </agm-polygon>
+
+  <agm-polygon [paths] = "rectangle" [fillColor]="colorRett">
+  </agm-polygon>
+
+
+
+</agm-map>
+
+<button (click)="onClickRed()">Cerchio Rosso</button>
+<button (click)="onClickBlue()">Cerchio Blu</button>
+<button (click)="onClickGreen()">Cerchio Verde</button>
+
+<button (click)="onClickRettRed()">Rettangolo Rosso</button>
+<button (click)="onClickRettBlue()">Rettangolo Blu</button>
+<button (click)="onClickRettGreen()">Rettangolo Verde</button>
+
+
+
